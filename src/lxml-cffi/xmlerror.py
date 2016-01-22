@@ -32,6 +32,7 @@ void setPyXsltErrorFunc(PyXsltErrorFunc func);
 """)
 helpers = ffi.verify("""
 #include "libxml/xmlerror.h"
+#include "libxml/relaxng.h"
 #include <string.h>
 #include <stdio.h>
 
